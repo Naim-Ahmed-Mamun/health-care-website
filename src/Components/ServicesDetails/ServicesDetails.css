@@ -1,0 +1,22 @@
+.services_details{
+    padding: 150px 0;
+}
+.service_text h2{
+    font-size: 36px;
+    color: var(--heading-color);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.service_text p{
+    font-size: 16px;
+    color: var(--paragraph-color);
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.service_img img{
+    width: 400px;
+    height: 400;
+    height: 400px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

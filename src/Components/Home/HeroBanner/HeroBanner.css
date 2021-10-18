@@ -1,0 +1,30 @@
+.heroBanner{
+    padding-top: 150px;
+    position: relative;
+}
+.carousel {
+    position: inherit !important;
+}
+.banner_content h2{
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-bottom: 25px;
+}
+.banner_content p {
+    max-width: 450px;
+    color: var(--paragraph-color);
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 3rem !important;
+    height: 3rem !important;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+    background: gray;
+    border-radius: 50%;
+}

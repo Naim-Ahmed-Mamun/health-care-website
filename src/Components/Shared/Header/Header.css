@@ -1,0 +1,36 @@
+.navBar_container{
+    background: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    transition: 0.5s ease;
+}
+.navBar_sticky{
+    position: fixed;
+    transition: 0.5s ease;
+}
+.nav_menu .nav_link{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+    display: inline-block;
+    margin: 0 15px;
+    padding: 8px 15px;
+}
+.navbar-dark .navbar-toggler-icon {
+    background-image: url(../../../img/menuBar.svg);
+    background: red;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+.navbar-dark .navbar-toggler {
+    color: rgb(104 41 41 / 55%);
+    border-color: inherit;
+}

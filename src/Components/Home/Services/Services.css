@@ -1,0 +1,30 @@
+.services_sec{
+    padding: 150px 0;
+}
+.sec_title h2 {
+    font-size: 48px;
+    color: var(--heading-color);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 65px;
+    position: relative;
+}
+.sec_title h2::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    left: 30%;
+    bottom: -30px;
+    background: var(--main-color);
+}
+.service_text h3{
+    font-size: 28px;
+    color: var(--heading-color);
+    font-weight: 500;
+}
+.service_text p{
+    color: var(--paragraph-color);
+    line-height: 26px;
+}

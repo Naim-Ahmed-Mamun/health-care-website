@@ -1,0 +1,21 @@
+.team_introducing_sec{
+    padding: 150px 0;
+}
+.introducing_team_info h2{
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--heading-color);
+    margin-bottom: 20px;
+}
+.introducing_team_info span{
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.introducing_team_info p{
+    color: var(--paragraph-color);
+    line-height: 28px;
+    font-weight: 500;
+}

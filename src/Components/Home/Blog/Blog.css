@@ -1,0 +1,33 @@
+.blog_section{
+    padding: 0px 0 150px;
+}
+
+.blog.sec_title h2::before{
+    bottom: -20%;
+}
+.blog.sec_title p {
+    max-width: 550px;
+    margin: 25px auto 20px;
+    text-align: center;
+    color: var(--paragraph-color);
+}
+
+.card-body {
+    padding: 1rem 10px !important;
+}
+.blog_item img {
+    height: 300px;
+}
+.blog_text .date{
+    font-weight: 500;
+}
+.blog_text h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--heading-color);
+}
+.blog_text p{
+    color: var(--paragraph-color);
+}
+

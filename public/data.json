@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "imgUrl": "https://i.ibb.co/XVwd3RJ/service-img-1-x-ray.jpg",
+      "name":"X-ray & CT Scan",
+      "desc":"Tomographic imaging consists of directing X-rays at an object from multiple orientations and measuring the decrease in intensity along a series of linear paths. This decrease is characterized by Beer's Law, which describes intensity reduction as a function of X-ray energy, path length, and material linear attenuation coefficient. A specialized algorithm is then used to reconstruct the distribution of X-ray attenuation in the volume being imaged."
+    },
+    {
+      "id": 2,
+      "imgUrl": "https://i.ibb.co/wc7gV3r/service-img-5-cardiology.jpg",
+      "name":"Cardiology",
+      "desc":"Cardiology is a specialty of internal medicine. To be a cardiologist in the United States, a three-year residency in internal medicine is followed by a three-year fellowship in cardiology. It is possible to specialize further in a sub-specialty. Recognized sub-specialties in the United States by the ACGME are cardiac electrophysiology, echocardiography, interventional cardiology, and nuclear cardiology. Recognized subspecialties in the United States by the American Osteopathic Association Bureau of Osteopathic Specialists (AOABOS) include clinical cardiac electrophysiology and interventional cardiology.[1][2] While in India, a person needs to undergo three years of residency in General Medicine or Pediatrics after M.B.B.S and then three years of residency in Cardiology to be a D.M/Diplomate of National Board (DNB) in Cardiology"
+    },
+    {
+      "id": 3,
+      "imgUrl": "https://i.ibb.co/QdBdv3Y/service-img-2-neurology.jpg",
+      "name":"Neurology",
+      "desc":"Neurology is the branch of medicine concerned with the study and treatment of disorders of the nervous system. The nervous system is a complex, sophisticated system that regulates and coordinates body activities. It has two major divisions: Central nervous system: the brain and spinal cord."
+    },
+    {
+      "id": 4,
+      "imgUrl": "https://i.ibb.co/FgN8vTm/service-img-6-dental.jpg",
+      "name":"Dental Care",
+      "desc":"This is a guide to the main treatments carried out by dentists. Some are readily available on the Medico, while some may only be available on the Medico in certain circumstances.As with glasses and prescription costs, you have to pay a contribution towards the cost of your Medico dental treatment.The cost depends on the type of treatment and which co band the treatment is covered by.With the exception of teeth whitening, implants and veneers, the treatments on this page are usually available on the Medico."
+    },
+    {
+      "id": 5,
+      "imgUrl": "https://i.ibb.co/3fKDtZn/service-img-4-ophthalmology.jpg",
+      "name":"Ophthalmology",
+      "desc":"Ophthalmology is a branch of medicine and surgery that deals with the diagnosis and treatment of disorders of the eye. An ophthalmologist is a physician who specializes in ophthalmology. The credentials include a degree in medicine, followed by additional four to five years of residency training in ophthalmology. Residency training programs for ophthalmology may require a one-year internship with training in internal medicine, pediatrics, or general surgery. Additional specialty training (or fellowship) may be sought in a particular aspect of eye pathology.Ophthalmologists are allowed to prescribe medications to treat eye diseases, implement laser therapy, and perform surgery when needed. Ophthalmologists may participate in academic research on the diagnosis and treatment for eye disorders"
+    },
+    {
+      "id": 6,
+      "imgUrl": "https://i.ibb.co/RpwDL2j/service-img-3-laboratory.jpg",
+      "name":"Laboratory",
+      "desc":"A medico procedure that involves testing a sample of blood, urine, or other substance from the body. Laboratory tests can help determine a diagnosis, plan treatment, check to see if treatment is working, or monitor the disease over time."
+    }
+  ]
