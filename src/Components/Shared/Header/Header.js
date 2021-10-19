@@ -19,6 +19,7 @@ const Header = () => {
             setSticky(false);
         }
     };
+    // window scroll function
     window.addEventListener("scroll",handleStickyHeader)
     return (
         <>
@@ -31,7 +32,6 @@ const Header = () => {
                             <Nav className="ms-auto nav_menu">
                                 <NavLink className="nav_link" to="/home">Home</NavLink>
                                 <NavLink className="nav_link" to="/about">About US</NavLink>
-                                <NavLink className="nav_link" to="/services">Services</NavLink>
                                 <NavLink className="nav_link" to="/contact">Contact Us</NavLink>
                             </Nav>
                             {user.email ? <div className="user_name">

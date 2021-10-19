@@ -5,8 +5,10 @@ import { Redirect, Route } from 'react-router';
 import useAuth from '../../Hooks/useAuth';
 
 const PrivateRoute = ({children,...rest}) => {
+    // use auth
     const {user,isLoading} = useAuth();
 
+    // loading
     if(isLoading){
         return <Spinner animation="border" />
     }

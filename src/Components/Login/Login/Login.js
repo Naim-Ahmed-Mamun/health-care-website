@@ -11,6 +11,7 @@ const Login = () => {
     passwordResetEmail,setSuccess,setError} = useAuth();
     const location = useLocation();
     const history = useHistory();
+    // redirect uri
     const redirect_uri = location.state?.from || '/home';
 
     // handle google sign in
@@ -44,7 +45,9 @@ const Login = () => {
         .then(result => {
             console.log(result.user);
             setError('')
+            // redirect location
             history.push(redirect_uri);
+            // remove input field for a few second
             setTimeout(() => {
                 document.getElementById('email').value = '';
                 document.getElementById('password').value = '';
@@ -53,6 +56,7 @@ const Login = () => {
         .catch(err => {
             setError(err.message);
             setSuccess('');
+            // remove input field for a few second
             setTimeout(() => {
                 document.getElementById('email').value = '';
                 document.getElementById('password').value = '';
@@ -60,6 +64,7 @@ const Login = () => {
         })
     }
 
+    // remove success or error for a few second
     setTimeout(() => {
         setSuccess('');
         setError('')

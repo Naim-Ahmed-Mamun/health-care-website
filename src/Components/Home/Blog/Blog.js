@@ -6,10 +6,9 @@ import blogImg_3 from '../../../img/blog-3.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock } from '@fortawesome/free-regular-svg-icons';
 import { Card } from 'react-bootstrap';
-// import blogImg_2 from '../../../img/blog-2.jpg';
-// import blogImg_3 from '../../../img/blog-3.jpg';
 
 const Blog = () => {
+    // blog data
     const blogsData = [
         {
             id: 1,

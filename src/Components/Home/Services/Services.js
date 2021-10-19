@@ -6,8 +6,9 @@ import useServices from '../../../Hooks/useServices';
 import './Services.css';
 
 const Services = () => {
+    // services all item
     const [serviceItem] = useServices();
-    console.log(serviceItem);
+    // console.log(serviceItem);
     return (
         <>
             <section id="services" className="services_sec">
@@ -19,7 +20,7 @@ const Services = () => {
                         {
                             serviceItem.map(item => {
                                 return (
-                                    <div key={item.id} className="col-lg-4 mb-4" data-aos="fade-up">
+                                    <div key={item.id} className="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
                                         <Card className="services_card_item">
                                             <div className="services_img">
                                                 <Card.Img variant="top" src={item.imgUrl} />
@@ -28,7 +29,7 @@ const Services = () => {
                                                 <h3>{item.name}</h3>
                                                 <p>{item.desc.slice(1, 80)}....</p>
                                                 <HashLink to={`servicesDetails/${item.name}`}>
-                                                    <button className="regular_btn">Read More</button>
+                                                    <button className="regular_btn">See Details</button>
                                                 </HashLink>
                                             </Card.Body>
                                         </Card>

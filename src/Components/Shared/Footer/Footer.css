@@ -80,10 +80,17 @@
 
 /* ----------------------media query---------------- */
 
-@media screen and (max-width:375px) {
+/* ----- mobile device---- */
+@media (max-width:576px) {
     .footer_item {
         margin: 15px 0;
     }
+    .testimonial_item {
+        margin-bottom: 30px;
+    }
+}
+/* -----small mobile device---- */
+@media (max-width:375px) {
     .subscribe_field {
         position: relative;
     }
@@ -91,8 +98,5 @@
         position: absolute;
         top: 0;
         right: 0%;
-    }
-    .testimonial_item {
-        margin-bottom: 30px;
     }
 }

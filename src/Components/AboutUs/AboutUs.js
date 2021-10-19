@@ -15,7 +15,7 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <div className="container" >
-                    <div className="row mt-5 pt-5 align-items-center">
+                    <div className="row mt-5 pt-5 align-items-center about_wrapper">
                         <div className="col-lg-6">
                             <div className="about_img">
                                 <img src={aboutImg} alt="" />

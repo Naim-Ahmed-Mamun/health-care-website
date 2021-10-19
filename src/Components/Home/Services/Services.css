@@ -40,13 +40,25 @@
 
 /* ----------------------media query---------------- */
 
-@media screen and (max-width:375px){
+/* ---- mobile device---- */
+@media (min-width:375px) and (max-width:576px){
+    .sec_title h2 {
+        font-size: 38px;
+        line-height: 45px;
+    }
+    .sec_title h2::before {
+        width: 150px;
+        left: 10%;
+    }
+}
+/* ---- small mobile device---- */
+@media (max-width:375px){
     .sec_title h2 {
         font-size: 28px;
         line-height: 40px;
     }
     .sec_title h2::before {
         width: 150px;
-        left: 23%;
+        left: 10%;
     }
 }

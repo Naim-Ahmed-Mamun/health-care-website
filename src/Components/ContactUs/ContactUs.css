@@ -34,3 +34,16 @@
 .contact_form textarea:focus{
     outline: none;
 }
+
+
+/* --------media query ---------------- */
+
+/* ----small mobile device-------- */
+@media (max-width: 576px) {
+    .contact_item {
+        margin-bottom: 30px;
+    }
+    .contact_img {
+        padding-top: 50px;
+    }
+}

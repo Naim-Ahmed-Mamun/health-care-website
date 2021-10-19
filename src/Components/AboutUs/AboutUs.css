@@ -53,3 +53,19 @@
     font-weight: 500;
     color: var(--paragraph-color);
 }
+
+/* ------ media query------------- */
+
+/* ----small mobile device---------- */
+@media (max-width:576px){
+    .about_wrapper{
+        flex-direction: column-reverse;
+    }
+    .about_content h2 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .about_content ul{
+        margin-bottom: 30px !important;
+    }
+}

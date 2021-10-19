@@ -29,7 +29,15 @@
 
 /* ----------------------media query---------------- */
 
-@media screen and (max-width:375px){
+/* ---- mobile device----------- */
+@media (min-width:375px) and (max-width:576px){
+    .testimonial_item {
+        margin-bottom: 30px;
+    }
+}
+
+/* ----small mobile device----------- */
+@media (max-width:375px){
     .testimonial_item {
         margin-bottom: 30px;
     }

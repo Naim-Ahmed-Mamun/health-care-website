@@ -7,7 +7,9 @@ import './ServicesDetails.css';
 
 const ServicesDetails = () => {
     const { name } = useParams();
+    // services items
     const [serviceItem] = useServices();
+    // find specific service item state
     const [selectedItem, setSelectedItem] = useState({})
     // console.log(name);
     useEffect(() => {
@@ -15,7 +17,7 @@ const ServicesDetails = () => {
         setSelectedItem(matched)
     }, [serviceItem, name]);
 
-    console.log(selectedItem);
+    // console.log(selectedItem);
 
     return (
         <section id="services_details">

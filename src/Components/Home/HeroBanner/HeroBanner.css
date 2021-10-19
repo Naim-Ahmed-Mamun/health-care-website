@@ -45,3 +45,24 @@
 .carousel-control-prev-icon {
     background-image: url("../../../img/left-arrow.png") !important;
 }
+
+/* ----mobile device------- */
+@media (min-width:375px) and (max-width:576px){
+    .banner_content h2{
+        font-size: 38px;
+        line-height: 50px;
+    }
+    .banner_img{
+        padding-top: 60px;
+    }
+}
+
+/* small mobile device--- */
+@media (max-width:375px){
+    .banner_content h2{
+        font-size: 28px;
+    }
+    .banner_img{
+        padding-top: 60px;
+    }
+}

@@ -7,7 +7,7 @@ import Home from './Components/Home/Home/Home';
 import Footer from './Components/Shared/Footer/Footer';
 import NotFound from './Components/NotFound/NotFound';
 import ServicesDetails from './Components/ServicesDetails/ServicesDetails';
-import Services from './Components/Home/Services/Services';
+// import Services from './Components/Home/Services/Services';
 import Login from './Components/Login/Login/Login';
 import SignUp from './Components/SignUp/SignUp';
 import AuthProvider from './context/AuthProvider';
@@ -34,9 +34,6 @@ function App() {
 						</Route>
 						<Route path="/home">
 							<Home></Home>
-						</Route>
-						<Route path="/services">
-							<Services></Services>
 						</Route>
 						<Route path="/about">
 							<AboutUs></AboutUs>

@@ -58,6 +58,17 @@
     }
 }
 
+/* ----mobile device------- */
+@media (min-width:375px) and (max-width:576px){
+    .banner_content h2{
+        font-size: 38px;
+    }
+    .banner_img{
+        padding-top: 60px;
+    }
+}
+
+/* small mobile device--- */
 @media (max-width:375px){
     .logo{
         width: 150px;

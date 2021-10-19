@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 
 const SignUp = () => {
-    const {signInUsingGoogle,setName,setEmail,setPassword,handleUserRegister,success,error} = useAuth();
+    // use auth 
+    const {signInUsingGoogle,setName,setEmail,setPassword,handleUserRegister,setSuccess,success,setError,error} = useAuth();
     // handle Name
     const handleName = (e) => {
         setName(e.target.value)
@@ -19,6 +20,12 @@ const SignUp = () => {
     const handlePassword = (e) => {
         setPassword(e.target.value);
     }
+
+    // remove success or error for a few second
+    setTimeout(() => {
+        setSuccess('');
+        setError('')
+    },3000)
 
     return (
         <>
