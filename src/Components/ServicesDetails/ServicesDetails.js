@@ -27,9 +27,6 @@ const ServicesDetails = () => {
                         <div className="service_text">
                             <h2>{selectedItem?.name}</h2>
                             <p>{selectedItem?.desc}</p>
-                            <HashLink to="/home#services">
-                                <button className="regular_btn">See All Services</button>
-                            </HashLink>
                         </div>
                     </div>
                     <div className="col-lg-5">
@@ -37,6 +34,11 @@ const ServicesDetails = () => {
                             <img src={selectedItem?.imgUrl} alt="" />
                         </div>
                     </div>
+                </div>
+                <div className="text-center mt-5 pt-5">
+                    <HashLink to="/home#services">
+                        <button className="regular_btn">See All Services</button>
+                    </HashLink>
                 </div>
             </div>
         </section>

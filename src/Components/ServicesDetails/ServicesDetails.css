@@ -12,6 +12,7 @@
     color: var(--paragraph-color);
     font-weight: 500;
     margin-bottom: 30px;
+    max-width: 600px;
 }
 .service_img img{
     width: 400px;
