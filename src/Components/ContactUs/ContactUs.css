@@ -38,8 +38,8 @@
 
 /* --------media query ---------------- */
 
-/* ----small mobile device-------- */
-@media (max-width: 576px) {
+/* ---- mobile tablet device-------- */
+@media (max-width: 768px) {
     .contact_item {
         margin-bottom: 30px;
     }

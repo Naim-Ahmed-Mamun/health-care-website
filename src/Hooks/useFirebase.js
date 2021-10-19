@@ -49,22 +49,13 @@ const useFirebase = () => {
     }, []);
 
     // create user with email and password
-    const handleUserRegister = (e) => {
-        e.preventDefault();
+    const registerUserEmailAndPassword = () => {
         if (password.length < 6) {
             setError('Password must be at least 6 character');
             return;
         }
-        createUserWithEmailAndPassword(auth, email, password)
-            .then(result => {
-                setUser(result.user);
-                console.log(result.user);
-                updateUser();
-                verifyEmail();
-            })
-            .catch(err => {
-                setError(err.message)
-            })
+       return createUserWithEmailAndPassword(auth, email, password)
+            
     }
 
     // update user 
@@ -129,7 +120,10 @@ const useFirebase = () => {
         setName,
         setEmail,
         setPassword,
-        handleUserRegister,
+        setUser,
+        registerUserEmailAndPassword,
+        updateUser,
+        verifyEmail,
         loginUserEmailAndPassword,
         passwordResetEmail,
         isLoading,

@@ -47,11 +47,6 @@ const Login = () => {
             setError('')
             // redirect location
             history.push(redirect_uri);
-            // remove input field for a few second
-            setTimeout(() => {
-                document.getElementById('email').value = '';
-                document.getElementById('password').value = '';
-            },1500);
         })
         .catch(err => {
             setError(err.message);

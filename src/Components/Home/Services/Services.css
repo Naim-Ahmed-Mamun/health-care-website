@@ -40,6 +40,12 @@
 
 /* ----------------------media query---------------- */
 
+/* ----------tablet size----------------- */
+@media (min-width:577px) and (max-width:768px){
+    .sec_title h2 {
+        line-height: 60px;
+    }
+}
 /* ---- mobile device---- */
 @media (min-width:375px) and (max-width:576px){
     .sec_title h2 {

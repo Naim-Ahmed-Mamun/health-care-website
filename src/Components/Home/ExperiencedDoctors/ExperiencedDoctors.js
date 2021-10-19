@@ -58,7 +58,7 @@ const ExperiencedDoctors = () => {
                             doctorsData.map(doctor => {
                                 return (
                                     <div key={doctor.id} className="col-lg-3">
-                                        <div className="doctor_img mb-3">
+                                        <div className="doctor_details mb-3">
                                             <img src={doctor.imgUrl} alt="" />
                                             <div className="social_link">
                                                 <ul className="d-flex">

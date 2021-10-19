@@ -81,7 +81,7 @@
 /* ----------------------media query---------------- */
 
 /* ----- mobile device---- */
-@media (max-width:576px) {
+@media (max-width:768px) {
     .footer_item {
         margin: 15px 0;
     }

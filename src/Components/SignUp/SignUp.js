@@ -4,10 +4,16 @@ import googleIcon from '../../img/google.png';
 import { Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
+import { useLocation,useHistory } from 'react-router';
 
 const SignUp = () => {
     // use auth 
-    const {signInUsingGoogle,setName,setEmail,setPassword,handleUserRegister,setSuccess,success,setError,error} = useAuth();
+    const {signInUsingGoogle,setName,setEmail,setPassword,registerUserEmailAndPassword,setSuccess,
+    success,setError,error,updateUser,verifyEmail,setUser} = useAuth();
+    const location = useLocation();
+    const history = useHistory();
+    // redirect uri
+    const redirect_uri = location.state?.from || '/home';
     // handle Name
     const handleName = (e) => {
         setName(e.target.value)
@@ -19,6 +25,29 @@ const SignUp = () => {
     // handle Password
     const handlePassword = (e) => {
         setPassword(e.target.value);
+    }
+
+    // handle User Register
+    const handleUserRegister = (e) => {
+        e.preventDefault()
+        
+        registerUserEmailAndPassword()
+        .then(result => {
+            setUser(result.user);
+            console.log(result.user);
+            updateUser();
+            verifyEmail();
+            history.push(redirect_uri)
+        })
+        .catch(err => {
+            setError(err.message)
+            // remove input field for a few second
+            setTimeout(() => {
+                document.getElementById('userName').value = '';
+                document.getElementById('userEmail').value = '';
+                document.getElementById('userPassword').value = '';
+            },1500);
+        })
     }
 
     // remove success or error for a few second
@@ -41,13 +70,13 @@ const SignUp = () => {
                                 </div>
                             </div>
                             <div className="mb-4">
-                                <input onBlur={handleName} className="input" type="text" placeholder="Name" />
+                                <input id="userName" onBlur={handleName} className="input" type="text" placeholder="Name" />
                             </div>
                             <div className="mb-4">
-                                <input onBlur={handleEmail} className="input" type="email" placeholder="Email" />
+                                <input id="userEmail" onBlur={handleEmail} className="input" type="email" placeholder="Email" />
                             </div>
                             <div className="mb-4">
-                                <input onBlur={handlePassword} className="input" type="password" placeholder="Password" />
+                                <input id="userPassword" onBlur={handlePassword} className="input" type="password" placeholder="Password" />
                             </div>
                             <div>
                                 <p className="text-success">{success}</p>

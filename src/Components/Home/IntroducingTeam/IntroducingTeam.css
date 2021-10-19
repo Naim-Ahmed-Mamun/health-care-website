@@ -22,6 +22,19 @@
 
 /* ----------------------media query---------------- */
 
+/* ----tablet device----------- */
+@media (min-width:577px) and (max-width:768px){
+    .introducingTeam_wrapper{
+        flex-direction: column-reverse;
+    }
+    .introducing_team_info h2 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .doctor_img {
+        text-align: center;
+    }
+}
 
 /* ------------mobile device ---------------- */
 @media  (min-width:375px) and (max-width:576px){
@@ -31,6 +44,9 @@
     .introducing_team_info h2 {
         font-size: 38px;
         line-height: 45px;
+    }
+    .doctor_img {
+        text-align: center;
     }
 }
 
@@ -43,5 +59,7 @@
         font-size: 26px;
         line-height: 40px;
     }
-    
+    .doctor_img {
+        text-align: center;
+    }
 }

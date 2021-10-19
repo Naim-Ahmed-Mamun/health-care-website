@@ -1,12 +1,12 @@
 .experience_doctors{
     padding-bottom: 100px;
 }
-.doctor_img{
+.doctor_details{
     position: relative;
     overflow: hidden;
     transition: 0.3s ease;
 }
-.doctor_img::before{
+.doctor_details::before{
     content: '';
     position: absolute;
     width: -100%;
@@ -16,7 +16,7 @@
     left: 0;
     transition: 0.5s ease;
 }
-.doctor_img:hover::before{
+.doctor_details:hover::before{
     width: 100%;
 }
 .social_link {
@@ -29,7 +29,7 @@
     /* transform: translate(50%, -50%); */
     /* transform: translateX(50%,-50%); */
 }
-.doctor_img:hover .social_link{
+.doctor_details:hover .social_link{
     bottom: 40%;
     visibility: visible;
     opacity: 1;
@@ -49,6 +49,9 @@
     color: var(--primary-color);
     display: inline-block;
 }
+.doctor_details img{
+    width: 100%;
+}
 .doctor_info h3{
     font-size: 20px;
     font-weight: 500;
@@ -57,4 +60,13 @@
 .doctor_info p{
     font-weight: 500;
     color: var(--main-color);
+}
+
+/* ----------------------media query---------------- */
+
+/* ----------tablet size----------------- */
+@media (min-width:577px) and (max-width:768px){
+    .social_link {
+        left: 32%;
+    }
 }

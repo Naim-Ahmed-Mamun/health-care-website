@@ -46,6 +46,17 @@
     background-image: url("../../../img/left-arrow.png") !important;
 }
 
+/* -------------media query-------------- */
+/* ---------tablet device ------------- */
+@media (min-width:577px) and (max-width:768px){
+    .banner_content h2{
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .banner_img{
+        padding-top: 60px;
+    }
+}
 /* ----mobile device------- */
 @media (min-width:375px) and (max-width:576px){
     .banner_content h2{

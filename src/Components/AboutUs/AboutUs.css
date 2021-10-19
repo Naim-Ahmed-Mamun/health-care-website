@@ -56,8 +56,8 @@
 
 /* ------ media query------------- */
 
-/* ----small mobile device---------- */
-@media (max-width:576px){
+/* ---- mobile tablet device---------- */
+@media (max-width:768px){
     .about_wrapper{
         flex-direction: column-reverse;
     }
