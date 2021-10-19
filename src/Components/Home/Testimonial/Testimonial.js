@@ -9,12 +9,12 @@ const Testimonial = () => {
         <>
             <section className="testimonial">
                 <div className="container">
-                    <div className="sec_title">
+                    <div className="sec_title" data-aos="fade-up">
                         <h2>What Our Patients Say</h2>
                     </div>
                     <div className="row mt-5 pt-5">
                         <div className="col-lg-6">
-                            <div className="testimonial_item d-flex">
+                            <div className="testimonial_item d-flex" data-aos="fade-up">
                                 <div className="testimonial_img">
                                     <img src={testimonial_img_1} alt="" />
                                 </div>
@@ -26,7 +26,7 @@ const Testimonial = () => {
                             </div>
                         </div>
                         <div className="col-lg-6">
-                            <div className="testimonial_item d-flex">
+                            <div className="testimonial_item d-flex" data-aos="fade-up">
                                 <div className="testimonial_img">
                                     <img src={testimonial_img_2} alt="" />
                                 </div>

@@ -1,5 +1,5 @@
 .heroBanner{
-    padding-top: 150px;
+    padding-top: 180px;
     position: relative;
 }
 .carousel {
@@ -17,7 +17,17 @@
     font-weight: 500;
     line-height: 28px;
 }
-
+.banner_img img{
+    animation: bounce_up 2s linear infinite alternate;
+}
+@keyframes bounce_up {
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
 .carousel-control-next-icon, .carousel-control-prev-icon {
     display: inline-block;
     width: 3rem !important;
@@ -25,6 +35,13 @@
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 100% 100%;
-    background: gray;
+    /* background: gray; */
     border-radius: 50%;
+}
+.carousel-control-next-icon {
+    background-image: url('../../../img/right-arrow.png') !important;
+    /* width: 15px; */
+}
+.carousel-control-prev-icon {
+    background-image: url("../../../img/left-arrow.png") !important;
 }

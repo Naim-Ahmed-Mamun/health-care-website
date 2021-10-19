@@ -40,7 +40,7 @@ const Blog = () => {
         <>
             <section className="blog_section">
                 <div className="container">
-                    <div className="blog sec_title">
+                    <div className="blog sec_title" data-aos="fade-up">
                         <h2>Latest Medico news</h2>
                         <p>Read our latest news from the company or general medical news. Feel free to ask questions in comments for any news you find interesting.</p>
                     </div>
@@ -48,9 +48,11 @@ const Blog = () => {
                         {
                             blogsData.map(blog => {
                                 return (
-                                    <div key={blog.id} className="col-lg-4 mb-3">
+                                    <div key={blog.id} className="col-lg-4 mb-3" data-aos="fade-up">
                                         <Card className="blog_item">
-                                            <Card.Img variant="top" src={blog.imgUrl} />
+                                            <div className="blog_img">
+                                                <Card.Img variant="top" src={blog.imgUrl} />
+                                            </div>
                                             <Card.Body className="blog_text">
                                                 <div className="mb-2 date">
                                                     <i>{blog.dateIcon}</i>

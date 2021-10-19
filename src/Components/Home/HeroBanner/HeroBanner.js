@@ -12,7 +12,7 @@ const HeroBanner = () => {
                 <div className="container">
                     <Carousel>
                         <Carousel.Item>
-                            <div className="row align-items-center">
+                            <div className="row align-items-center" data-aos="fade-up">
                                 <div className="col-lg-6">
                                     <div className="banner_content">
                                         <h2>Best Medical And Health Care Center</h2>
@@ -22,7 +22,7 @@ const HeroBanner = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="banner_img">
-                                        <img src={banner_1} alt="" />
+                                         <img src={banner_1} alt="" /> 
                                     </div>
                                 </div>
                             </div>

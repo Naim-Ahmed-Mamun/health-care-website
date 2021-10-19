@@ -40,3 +40,12 @@ a{
   background: var(--primary-color);
 }
 /* ---global css end--- */
+
+@media (max-width: 375px) {
+  .banner_content h2 {
+    font-size: 28px !important;
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-bottom: 25px;
+}
+}

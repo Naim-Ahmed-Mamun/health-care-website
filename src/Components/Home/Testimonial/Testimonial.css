@@ -26,3 +26,11 @@
     font-size: 18px;
     font-weight: 500;
 }
+
+/* ----------------------media query---------------- */
+
+@media screen and (max-width:375px){
+    .testimonial_item {
+        margin-bottom: 30px;
+    }
+}

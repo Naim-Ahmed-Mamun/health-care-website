@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import useServices from '../../Hooks/useServices';
 import './ServicesDetails.css';
 
@@ -17,16 +18,16 @@ const ServicesDetails = () => {
     console.log(selectedItem);
 
     return (
-        <section className="services_details">
+        <section id="services_details">
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-7">
                         <div className="service_text">
                             <h2>{selectedItem?.name}</h2>
                             <p>{selectedItem?.desc}</p>
-                            <Link to="/services">
+                            <HashLink to="/home#services">
                                 <button className="regular_btn">See All Services</button>
-                            </Link>
+                            </HashLink>
                         </div>
                     </div>
                     <div className="col-lg-5">
