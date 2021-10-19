@@ -41,6 +41,11 @@
 /* ----------------------media query---------------- */
 
 /* ----------tablet size----------------- */
+@media (max-width:768px){
+    .sec_title h2::before {
+        visibility: hidden;
+    }
+}
 @media (min-width:577px) and (max-width:768px){
     .sec_title h2 {
         line-height: 60px;
@@ -52,19 +57,11 @@
         font-size: 38px;
         line-height: 45px;
     }
-    .sec_title h2::before {
-        width: 150px;
-        left: 10%;
-    }
 }
 /* ---- small mobile device---- */
 @media (max-width:375px){
     .sec_title h2 {
         font-size: 28px;
         line-height: 40px;
-    }
-    .sec_title h2::before {
-        width: 150px;
-        left: 10%;
     }
 }
