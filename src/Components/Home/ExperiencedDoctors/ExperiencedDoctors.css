@@ -84,3 +84,9 @@
         left: 32%;
     }
 }
+/* ----------tablet size----------------- */
+@media (min-width:375px) and (max-width:768px){
+    .social_link {
+        left: 32%;
+    }
+}
