@@ -64,6 +64,20 @@
 
 /* ----------------------media query---------------- */
 
+/* ----------desktop device-------------- */
+@media (min-width:1201px) and (max-width:1400px){
+    .social_link {
+        left: 16%;
+    }
+}
+
+/* ----------laptop device-------------- */
+@media (min-width:992px) and (max-width:1200px){
+    .social_link {
+        left: 12%;
+    }
+}
+
 /* ----------tablet size----------------- */
 @media (min-width:577px) and (max-width:768px){
     .social_link {

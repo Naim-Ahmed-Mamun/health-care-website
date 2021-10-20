@@ -43,10 +43,32 @@
 
 /* ----------------------media query---------------- */
 
-@media screen and (max-width:375px){
+/* ----------desktop device-------------- */
+@media (min-width:1201px) and (max-width:1400px){
+    .blog_text h3 {
+        font-size: 18px;
+    }
+}
+
+/* ---laptop device---------- */
+@media (min-width:992px) and (max-width:1200px){
+    .blog_text h3 {
+        font-size: 18px;
+    }
+}
+
+/* --------ipad device----------- */
+@media (min-width:769px) and (max-width:991px){
     .blog_text h3 {
         font-size: 18px;
         font-weight: 600;
+    }
+}
+
+@media screen and (max-width:375px){
+    .blog_text h3 {
+        font-size: 15px;
+        font-weight: 500;
     }
 }
 

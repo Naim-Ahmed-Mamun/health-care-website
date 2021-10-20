@@ -47,6 +47,36 @@
 }
 
 /* -------------media query-------------- */
+
+/* ----------desktop device-------------- */
+@media (min-width:1201px) and (max-width:1400px){
+    .banner_content h2{
+        font-size: 52px;
+        line-height: 60px;
+    }
+    .carousel-control-next, .carousel-control-prev {
+        width: inherit !important;
+    }
+}
+/* ----------laptop device-------------- */
+@media (min-width:992px) and (max-width:1200px){
+    .banner_content h2{
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .carousel-control-next, .carousel-control-prev {
+        width: inherit !important;
+    }
+}
+/* --------ipad device----------- */
+@media (min-width:769px) and (max-width:991px){
+    .banner_content h2 {
+        max-width: 600px;
+    }
+    .banner_img{
+        padding-top: 50px;
+    }
+}
 /* ---------tablet device ------------- */
 @media (min-width:577px) and (max-width:768px){
     .banner_content h2{

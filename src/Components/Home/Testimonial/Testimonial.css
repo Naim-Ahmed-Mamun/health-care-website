@@ -29,9 +29,22 @@
 
 /* ----------------------media query---------------- */
 
+/* --------ipad device----------- */
+@media (min-width:769px) and (max-width:991px){
+    .testimonial_text {
+        margin-left: 15px;
+    }
+    .testimonial_text p {
+        margin-bottom: 20px;
+    }
+}
+
 /* ---- mobile device----------- */
 @media (max-width:768px){
     .testimonial_item {
         margin-bottom: 30px;
+    }
+    .testimonial {
+        padding: 0 0 100px;
     }
 }

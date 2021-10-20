@@ -56,6 +56,32 @@
 
 /* ------ media query------------- */
 
+/* ----------laptop device-------------- */
+@media (min-width:992px) and (max-width:1200px){
+    .about_content strong {
+        margin-bottom: 5px;
+    }
+    .about_content h2 {
+        font-size: 28px;
+    }
+    .about_content .about_text h3 {
+        font-size: 20px;
+    }
+    .about_content .icon {
+        margin-right: 15px;
+    }
+}
+
+/* --------ipad device----------- */
+@media (min-width:769px) and (max-width:991px){
+    .about_wrapper{
+        flex-direction: column-reverse;
+    }
+    .about_img {
+        padding-top: 50px;
+    }
+}
+
 /* ---- mobile tablet device---------- */
 @media (max-width:768px){
     .about_wrapper{

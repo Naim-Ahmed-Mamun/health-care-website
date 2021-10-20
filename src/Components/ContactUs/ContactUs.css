@@ -38,6 +38,29 @@
 
 /* --------media query ---------------- */
 
+/* ----------laptop device-------------- */
+@media (min-width:992px) and (max-width:1200px){
+    .contact_item h3 {
+        font-size: 24px;
+    }
+}
+
+/* --------ipad device----------- */
+@media (min-width:769px) and (max-width:991px){
+    .contact_item{
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact_item i{
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+    .contact_item h3 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
 /* ---- mobile tablet device-------- */
 @media (max-width: 768px) {
     .contact_item {

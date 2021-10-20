@@ -82,15 +82,15 @@ const SignUp = () => {
                                 <p className="text-success">{success}</p>
                                 <p className="text-danger">{error}</p>
                             </div>
-                            <div className="row mb-4">
-                                <div className="col-lg-6">
+                            <div className="row align-items-center mb-4">
+                                <div className="col-lg-6 col-md-6 col-sm-6 col-6">
                                     <div className="form-check">
                                         <Form.Group className="mb-3" controlId="formBasicCheckbox">
                                             <Form.Check type="checkbox" label="Remember Me" />
                                         </Form.Group>
                                     </div>
                                 </div>
-                                <div className="col-lg-6 text-end">
+                                <div className="col-lg-6 col-md-6 col-sm-6 col-6 text-end">
                                     <Link to=""><p className="forgot_password">Forgot Password ?</p></Link>
                                 </div>
                             </div>

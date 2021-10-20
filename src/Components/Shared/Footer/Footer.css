@@ -80,6 +80,26 @@
 
 /* ----------------------media query---------------- */
 
+/* ----------laptop device-------------- */
+@media (min-width:992px) and (max-width:1200px){
+    .footer_item .subscribe_field input {
+        width: 180px;
+    }
+}
+
+/* --------ipad device----------- */
+@media (min-width:769px) and (max-width:991px){
+    .footer_item{
+        margin-bottom: 30px;
+    }
+    .footer_item.second,
+    .footer_item.fourth{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 /* ----- mobile device---- */
 @media (max-width:768px) {
     .footer_item {
@@ -91,12 +111,16 @@
 }
 /* -----small mobile device---- */
 @media (max-width:375px) {
-    .subscribe_field {
-        position: relative;
+    .footer_item .subscribe_field input {
+        width: 100%;
+        border-radius: 5px;
     }
     .footer_item .subscribe_field .regular_btn {
-        position: absolute;
-        top: 0;
-        right: 0%;
+        border-radius: 5px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .footer_item p {
+        font-size: 15px;
     }
 }

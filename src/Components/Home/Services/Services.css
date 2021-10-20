@@ -1,5 +1,5 @@
 .services_sec{
-    padding: 150px 0;
+    padding: 150px 0 100px;
 }
 .services_img {
     overflow: hidden;
@@ -24,7 +24,7 @@
     position: absolute;
     width: 200px;
     height: 2px;
-    left: 30%;
+    left: 33%;
     bottom: -30px;
     background: var(--main-color);
 }
@@ -39,11 +39,19 @@
 }
 
 /* ----------------------media query---------------- */
-
+/* ----------laptop device-------------- */
+@media (min-width:992px) and (max-width:1200px){
+    .service_text p {
+        height: 60px;
+    }
+}
 /* ----------tablet size----------------- */
 @media (max-width:768px){
     .sec_title h2::before {
         visibility: hidden;
+    }
+    .services_sec {
+        padding: 100px 0;
     }
 }
 @media (min-width:577px) and (max-width:768px){
@@ -61,7 +69,7 @@
 /* ---- small mobile device---- */
 @media (max-width:375px){
     .sec_title h2 {
-        font-size: 28px;
+        font-size: 25px;
         line-height: 40px;
     }
 }

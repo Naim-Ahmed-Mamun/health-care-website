@@ -21,6 +21,18 @@
 }
 
 /* ----------------------media query---------------- */
+/* ----------laptop device-------------- */
+@media (min-width:992px) and (max-width:1200px){
+    .introducing_team_info h2 {
+        font-size: 38px;
+    }
+}
+/* --------ipad device----------- */
+@media (min-width:769px) and (max-width:991px){
+    .introducing_team_info h2 {
+        font-size: 38px;
+    }
+}
 
 /* ----tablet device----------- */
 @media (min-width:577px) and (max-width:768px){
